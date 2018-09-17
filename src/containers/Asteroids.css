@@ -1,0 +1,56 @@
+.Asteroids {
+  margin: 20px 0;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+svg .title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+svg .xAxis .tick text {
+  transform: rotate(-60deg) translate(-30px);
+}
+
+.astro-viewer-clt label {
+  padding-right: 10px;
+}
+
+.astro-viewer {
+  display: flex;
+  align-items: center;
+}
+
+.astro-viewer input {
+  margin-bottom: 5px;
+}
+
+.astro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.astro-tooltip {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  padding: 10px;
+  background-color: rgba(25, 25, 25, 0.4);
+  border-radius: 20px;
+  font-size: 15px;
+  width: 200px;
+}
+
+.astro-tooltip p {
+  margin: 0;
+}
+
+.introduction {
+  width: 100%;
+  height: 200px;
+}

@@ -1,0 +1,19 @@
+.Apod .content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Apod .content .apod-img {
+  max-height: 400px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px grey;
+}
+
+.apod-desc {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.apod-desc span {
+  font-size: 0.8em;
+}

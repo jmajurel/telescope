@@ -1,0 +1,25 @@
+h1,h2{
+  text-align: center;
+}
+
+.container-fluid.welcome {
+  color: white;
+  padding: 50px 0;
+  margin-bottom: 20px;
+  background-color: #202020;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 0;
+  text-align: center;
+}
+.presentation {
+  margin-bottom: 40px;
+}
+
+.visualization .card-img-top {
+  width: 80%;
+  margin: 0 auto;
+}
