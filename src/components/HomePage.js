@@ -42,7 +42,7 @@ class HomePage extends Component {
 	      <div className="card-body">
 		<h5 className="card-title">Space Weather</h5>
 		<p className="card-text">Coronal ejection of solar particules</p>
-		<Link to="/weather" className="btn btn-primary">Check Out</Link>
+		<a to="/weather" className="btn btn-primary" disabled>Check Out</a>
 	      </div>
 	    </div>
 

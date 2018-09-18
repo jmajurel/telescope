@@ -9,15 +9,15 @@ const NavBar = props => ((
 	<Link className='nav-link' to='/asteroids'>Asteroids</Link>
       </li>
       <li className='nav-item'>
-	<Link className='nav-link' to='/'>Space Weather</Link>
+	<a className='nav-link' disabled>Space Weather</a>
       </li>
     </ul>
     <ul className='navbar-nav navbar-right'>
       <li className='nav-item'>
-	<Link className='nav-link' to='/'>Log In</Link>
+	<a className='nav-link' disabled>Log In</a>
       </li>
       <li className='nav-item'>
-	<Link className='nav-link' to='/'>Sign Up</Link>
+	<a className='nav-link' disabled>Sign Up</a>
       </li>
     </ul>
   </nav>
