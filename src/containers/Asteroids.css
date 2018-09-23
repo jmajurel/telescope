@@ -44,6 +44,7 @@ svg .xAxis .tick text {
   border-radius: 20px;
   font-size: 15px;
   width: 200px;
+  pointer-events: none;
 }
 
 .astro-tooltip p {
