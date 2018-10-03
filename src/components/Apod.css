@@ -1,6 +1,15 @@
 .Apod .content {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+}
+
+@media all and (max-width: 800px){
+  .Apod .content {
+    flex-direction: column;
+  }
+  .apod-desc {
+    margin-top: 20px;
+  }
 }
 
 .Apod .content .apod-img {

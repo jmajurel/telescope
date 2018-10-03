@@ -17,7 +17,7 @@ class HomePage extends Component {
         <Carousel />
 	<div className='container-fluid welcome'>
 	  <h1>Welcome to Telescope</h1>
-	  <h3>The great place to visualize real time space data</h3>
+	  <p>The great place to visualize real time space data</p>
 	</div>
 	<Apod />
 
