@@ -21,20 +21,23 @@ export function postProcess({near_earth_objects}, date) {
 
 export function plotAsteroids(asteroids) {
 
-  const padding = 120;
   const svg = d3.select('svg');
+  const width = svg.style('width').slice(0, -2);
+  const height = svg.style('height').slice(0, -2);
+  const maxDim = Math.max(width, height);
+  const padding = width * 0.07;
+
   const tooltip = d3.select('.astro-tooltip');
-  const width = svg.attr('width');
-  const height = svg.attr('height');
 
   //generate scales
   const xScale = d3.scaleLinear()
 		   .range([ padding, width - padding ]);
+
   const yScale = d3.scaleLinear()
 		   .range([ height - padding, padding ]);
 
   const rScale = d3.scaleLinear()
-		   .range([10, width * 0.05]);
+		   .range([maxDim * 0.01, maxDim * 0.05]);
 
   //generate Axis labels
   const xAxis = d3.axisBottom(xScale);
@@ -81,13 +84,14 @@ export function plotAsteroids(asteroids) {
   svg.append('text')
     .classed('title', true)
     .attr('x', `${width/2}`)
-    .attr('y', `${padding/2}`)
+    .attr('y', '1em')
     .attr('text-anchor','middle')
+    .attr('alignment-baseline','middle')
     
   svg.append("text")             
      .classed('xLabel', true)
      .attr("transform", `translate(${width/2}, ${height})`)
-     .attr('dy', '-2em')
+     .attr('dy', '-1em')
      .style("text-anchor", "middle")
 
   d3.select('.xLabel')
@@ -97,7 +101,7 @@ export function plotAsteroids(asteroids) {
      .classed('yLabel', true)
      .attr("transform", "rotate(-90)")
      .attr("x", 0 - (height / 2))
-     .attr("dy", "3em")
+     .attr("dy", "1em")
      .style("text-anchor", "middle");
 
   d3.select('.yLabel')

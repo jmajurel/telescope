@@ -42,12 +42,15 @@ class Asteroids extends Component {
 	  </div>
 	  <div className='astro-viewer'>
             <div className='astro-tooltip'></div>
-	    <svg
-	      width='900'
-	      height='600'>
-	    </svg>
+	    <svg></svg>
 	  </div>
-
+	  <p className='legend'>
+	    <em>
+	      The circles in the graph above shows the presence of asteroids on their closed approach date to Earth. 
+	      The circle sizes are function of their observed diameter.
+	      The color red represents a potentially hazardous asteroid moving toward earth.
+	    </em>
+	  </p>
 	</div>
       </div>
     );

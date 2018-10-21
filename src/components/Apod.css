@@ -13,7 +13,7 @@
 }
 
 .Apod .content .apod-img {
-  max-height: 400px;
+  height: 30vh;
   border-radius: 2px;
   box-shadow: 1px 1px 3px grey;
 }
