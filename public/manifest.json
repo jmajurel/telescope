@@ -1,11 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Telescope",
+  "name": "Telescope",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "telescopeIcon512x512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "telescopeIcon192x192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
     }
   ],
   "start_url": "./index.html",
